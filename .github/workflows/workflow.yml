@@ -3,6 +3,11 @@ name: Build and deploy app
 on:
   push
 
+# Required for OIDC
+permissions:
+  id-token: write
+  contents: read
+
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
 #
